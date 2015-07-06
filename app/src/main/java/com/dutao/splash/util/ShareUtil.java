@@ -21,6 +21,6 @@ public class ShareUtil {
         if (sharedPreferences==null){
             sharedPreferences = context.getSharedPreferences(SP_NAME,Context.MODE_PRIVATE);
         }
-        return sharedPreferences.getBoolean(key,false);
+        return sharedPreferences.getBoolean(key,true);
     }
 }
